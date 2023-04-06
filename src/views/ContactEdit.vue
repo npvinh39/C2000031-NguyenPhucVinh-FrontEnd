@@ -39,6 +39,7 @@ export default {
                 });
             }
         },
+
         async updateContact(data) {
             try {
                 await ContactService.update(this.contact._id, data);
@@ -47,6 +48,7 @@ export default {
                 console.log(error);
             }
         },
+
         async deleteContact() {
             if (confirm("Bạn muốn xóa Liên hệ này?")) {
                 try {
