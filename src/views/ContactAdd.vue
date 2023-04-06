@@ -29,16 +29,6 @@ export default {
                 console.log(error);
             }
         },
-        async deleteContact() {
-            if (confirm("Bạn muốn xóa Liên hệ này?")) {
-                try {
-                    await ContactService.delete(this.contact._id);
-                    this.$router.push({ name: "contactbook" });
-                } catch (error) {
-                    console.log(error);
-                }
-            }
-        },
     },
 };
 </script>
